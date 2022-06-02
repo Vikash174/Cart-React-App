@@ -38,8 +38,9 @@ const CartItem =(props)=> {
     // }
 
    
-        console.log('this.props',props);
+        // console.log('this.props',props);
         const { price, title, qty } = props.product;
+        const {product, onIncreaseQuantity,onDecreaseQuantity, onDeleteProduct} = props;
         return (
 
             <div className="cart-item">
